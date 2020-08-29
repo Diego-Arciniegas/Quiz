@@ -71,7 +71,9 @@ namespace Quiz_Arciniegas_Diego
             w.frameMain.NavigationService.Navigate(new Login());
         }
 
-        private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+       
+
+        private void srLevel_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             lblLevel.Content = "-Level: " + srLevel.Value.ToString();
         }

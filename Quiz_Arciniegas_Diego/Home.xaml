@@ -27,7 +27,8 @@
         </ComboBox>
         <Button Name="btnLogout" Content="Logout" HorizontalAlignment="Left" Height="32" Margin="163,314,0,0" VerticalAlignment="Top" Width="92" Click="btnLogout_Click" FontWeight="Bold" FontStyle="Italic" FontSize="14"/>
         <Label Content="Weapon Finder" HorizontalAlignment="Center" Height="43" VerticalAlignment="Top" Width="186" FontSize="24" FontWeight="Bold" FontStyle="Italic"/>
-        <Slider Name="srLevel" HorizontalAlignment="Left" Height="34" Margin="262,239,0,0" VerticalAlignment="Top" Width="127" Maximum="50" ValueChanged="Slider_ValueChanged" SmallChange="1" Orientation="Horizontal" AutoToolTipPlacement="None" TickPlacement="BottomRight" ScrollViewer.HorizontalScrollBarVisibility="Disabled" TickFrequency="1" TabIndex="1" IsSnapToTickEnabled="True" IsTabStop="False"/>
-        <Label Name="lblLevel" Content="-Level: 0" HorizontalAlignment="Left" Height="31" Margin="56,229,0,0" VerticalAlignment="Top" Width="124" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+
+        <Label Name="lblLevel" Content="-Level: 0" HorizontalAlignment="Left" Height="31" Margin="56,226,0,0" VerticalAlignment="Top" Width="124" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <Slider Name="srLevel" HorizontalAlignment="Left" Height="27" Margin="262,233,0,0" VerticalAlignment="Top" Width="133" TabIndex="1" SmallChange="1" Maximum="50" TickPlacement="BottomRight" ValueChanged="srLevel_ValueChanged" IsSnapToTickEnabled="True"/>
     </Grid>
 </Page>
