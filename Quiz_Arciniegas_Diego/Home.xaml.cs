@@ -29,7 +29,7 @@ namespace Quiz_Arciniegas_Diego
             string RarityOfTheWeapon = lblRarityOfTheWeapon.Content.ToString();
             string Category = cbxCategory.Text;
             string Level = srLevel.Value.ToString();
-            txtResults.Text = WeaponName + "," + RarityOfTheWeapon + "," + Category + "," + Level;
+            txtResults.Text = "-WeaponName: " + WeaponName + "\n"+ "-RarityOfTheWeapon: " + RarityOfTheWeapon + "\n"+ "-Category: " + Category + "\n"+ "-Level: " + Level;
 
         }
 
@@ -73,7 +73,7 @@ namespace Quiz_Arciniegas_Diego
 
         private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            lblLevel.Content = "-Level:" + srLevel.Value.ToString();
+            lblLevel.Content = "-Level: " + srLevel.Value.ToString();
         }
     }
 }

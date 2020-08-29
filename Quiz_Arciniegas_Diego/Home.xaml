@@ -8,7 +8,7 @@
       Title="Home" Background="#FFD1A5A5" Height="350">
 
     <Grid Margin="1,0,-1,0">
-        <TextBlock Name="txtResults" HorizontalAlignment="Left" Height="221" Margin="521,66,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="248" Background="#FFE2D1D1"/>
+        <TextBlock Name="txtResults" HorizontalAlignment="Left" Height="221" Margin="487,66,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="248" Background="#FFE2D1D1" FontStyle="Italic" FontSize="14"/>
         <Label Content="-WeaponName" HorizontalAlignment="Left" Height="28" Margin="56,52,0,0" VerticalAlignment="Top" Width="124" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
         <TextBox Name="txtWeaponName"  HorizontalAlignment="Left" Height="28" Margin="262,66,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="127"/>
         <Button Name="btnSave" Content="Save" HorizontalAlignment="Left" Height="28" Margin="163,285,0,0" VerticalAlignment="Top" Width="92" RenderTransformOrigin="0.52,0.527" Click="btnSave_Click" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
