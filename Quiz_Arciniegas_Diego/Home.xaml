@@ -4,19 +4,30 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Quiz_Arciniegas_Diego"
-      mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="800"
-      Title="Home" Background="#FFD1A5A5">
+      mc:Ignorable="d" d:DesignWidth="790"
+      Title="Home" Background="#FFD1A5A5" Height="350">
 
     <Grid Margin="1,0,-1,0">
-        <TextBlock Name="txtResults" HorizontalAlignment="Left" Height="232" Margin="542,0,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Center" Width="208" Background="#FFE2D1D1"/>
-        <Label Content="CharacterName" HorizontalAlignment="Left" Height="28" Margin="56,23,0,0" VerticalAlignment="Top" Width="124"/>
-        <TextBox Name="txtCharacterName" HorizontalAlignment="Left" Height="28" Margin="185,23,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="127"/>
-        <Button Name="btnSave" Content="Save" HorizontalAlignment="Left" Height="24" Margin="195,251,0,0" VerticalAlignment="Top" Width="79" RenderTransformOrigin="0.52,0.527" Click="btnSave_Click"/>
-        <Label Content="CharacterRarity" HorizontalAlignment="Left" Height="28" Margin="56,76,0,0" VerticalAlignment="Top" Width="102"/>
-        <Label Name="lblCharacterRarity" Visibility="Hidden" Content="" HorizontalAlignment="Left" Height="11" Margin="56,116,0,0" VerticalAlignment="Top" Width="93"/>
-        <RadioButton Content="Común" HorizontalAlignment="Left" Height="14" Margin="185,78,0,0" VerticalAlignment="Top" Width="127" Checked="RadioButton_Checked"/>
-        <RadioButton Content="Rara" HorizontalAlignment="Left" Height="19" Margin="185,97,0,0" VerticalAlignment="Top" Width="127" Checked="RadioButton_Checked_1"/>
-        <RadioButton Content="Epica" HorizontalAlignment="Left" Height="22" Margin="185,116,0,0" VerticalAlignment="Top" Width="127" Checked="RadioButton_Checked_2"/>
+        <TextBlock Name="txtResults" HorizontalAlignment="Left" Height="221" Margin="521,66,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="248" Background="#FFE2D1D1"/>
+        <Label Content="-WeaponName" HorizontalAlignment="Left" Height="28" Margin="56,52,0,0" VerticalAlignment="Top" Width="124" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox Name="txtWeaponName"  HorizontalAlignment="Left" Height="28" Margin="262,66,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="127"/>
+        <Button Name="btnSave" Content="Save" HorizontalAlignment="Left" Height="28" Margin="163,285,0,0" VerticalAlignment="Top" Width="92" RenderTransformOrigin="0.52,0.527" Click="btnSave_Click" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="-RarityOfTheWeapon" HorizontalAlignment="Left" Height="28" Margin="56,155,0,0" VerticalAlignment="Top" Width="153" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Name="lblRarityOfTheWeapon" Visibility="Hidden" Content="" HorizontalAlignment="Left" Height="11" Margin="56,116,0,0" VerticalAlignment="Top" Width="93"/>
+        <RadioButton Content="Common" HorizontalAlignment="Left" Height="14" Margin="262,162,0,0" VerticalAlignment="Top" Width="127" Checked="RadioButton_Checked" FontSize="14" FontStyle="Normal"/>
+        <RadioButton Content="Rare" HorizontalAlignment="Left" Height="14" Margin="262,180,0,0" VerticalAlignment="Top" Width="127" Checked="RadioButton_Checked" FontSize="14" FontStyle="Normal"/>
+        <RadioButton Content="Epic" HorizontalAlignment="Left" Height="19" Margin="262,199,0,0" VerticalAlignment="Top" Width="127" Checked="RadioButton_Checked_1" FontSize="14"/>
+        <Label Content="-Category" HorizontalAlignment="Left" Height="37" Margin="56,110,0,0" VerticalAlignment="Top" Width="142" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+        <ComboBox Name="cbxCategory" HorizontalAlignment="Left" Height="24" Margin="262,116,0,0" VerticalAlignment="Top" Width="127" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem Content="Assault"/>
+            <ComboBoxItem Content="Sniper"/>
+            <ComboBoxItem Content="Shotgun"/>
+            <ComboBoxItem Content="SMG"/>
+            <ComboBoxItem Content="LMG"/>
+        </ComboBox>
+        <Button Name="btnLogout" Content="Logout" HorizontalAlignment="Left" Height="32" Margin="163,314,0,0" VerticalAlignment="Top" Width="92" Click="btnLogout_Click" FontWeight="Bold" FontStyle="Italic" FontSize="14"/>
+        <Label Content="Weapon Finder" HorizontalAlignment="Center" Height="43" VerticalAlignment="Top" Width="186" FontSize="24" FontWeight="Bold" FontStyle="Italic"/>
+        <Slider Name="srLevel" HorizontalAlignment="Left" Height="34" Margin="262,239,0,0" VerticalAlignment="Top" Width="127" Maximum="50" ValueChanged="Slider_ValueChanged" SmallChange="1" Orientation="Horizontal" AutoToolTipPlacement="None" TickPlacement="BottomRight" ScrollViewer.HorizontalScrollBarVisibility="Disabled" TickFrequency="1" TabIndex="1" IsSnapToTickEnabled="True" IsTabStop="False"/>
+        <Label Name="lblLevel" Content="-Level: 0" HorizontalAlignment="Left" Height="31" Margin="56,229,0,0" VerticalAlignment="Top" Width="124" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
     </Grid>
 </Page>

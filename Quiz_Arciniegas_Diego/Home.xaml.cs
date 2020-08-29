@@ -25,19 +25,20 @@ namespace Quiz_Arciniegas_Diego
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
-            string CharacterName = txtCharacterName.Text;
-            string CharacterRarity = lblCharacterRarity.Content.ToString();
-           
-            txtResults.Text = CharacterName +","+ CharacterRarity; 
-            
+            string WeaponName = txtWeaponName.Text;
+            string RarityOfTheWeapon = lblRarityOfTheWeapon.Content.ToString();
+            string Category = cbxCategory.Text;
+            string Level = srLevel.Value.ToString();
+            txtResults.Text = WeaponName + "," + RarityOfTheWeapon + "," + Category + "," + Level;
+
         }
 
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
             RadioButton rb = sender as RadioButton;
-            if(rb.IsChecked.Value)
+            if (rb.IsChecked.Value)
             {
-                lblCharacterRarity.Content = rb.Content.ToString(); 
+                lblRarityOfTheWeapon.Content = rb.Content.ToString();
             }
         }
 
@@ -46,7 +47,7 @@ namespace Quiz_Arciniegas_Diego
             RadioButton rb = sender as RadioButton;
             if (rb.IsChecked.Value)
             {
-                lblCharacterRarity.Content = rb.Content.ToString();
+                lblRarityOfTheWeapon.Content = rb.Content.ToString();
             }
         }
 
@@ -55,8 +56,24 @@ namespace Quiz_Arciniegas_Diego
             RadioButton rb = sender as RadioButton;
             if (rb.IsChecked.Value)
             {
-                lblCharacterRarity.Content = rb.Content.ToString();
+                lblRarityOfTheWeapon.Content = rb.Content.ToString();
             }
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ComboBox cb = sender as ComboBox;
+        }
+
+        private void btnLogout_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow w = (MainWindow)Window.GetWindow(this);
+            w.frameMain.NavigationService.Navigate(new Login());
+        }
+
+        private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            lblLevel.Content = "-Level:" + srLevel.Value.ToString();
         }
     }
 }

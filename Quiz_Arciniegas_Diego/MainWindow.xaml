@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:Quiz_Arciniegas_Diego"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="790">
-    <Grid Loaded="Grid_Loaded">
+    <Grid Loaded="Grid_Loaded" Margin="0,0,0,-6">
         <Label Content="My App" HorizontalAlignment="Center" Height="45" Margin="0,10,0,0" VerticalAlignment="Top" Width="100" FontSize="24" RenderTransformOrigin="0.495,0.421" FontWeight="Bold" FontStyle="Italic"/>
-        <Frame Name="frameMain" Content="" HorizontalAlignment="Center" Height="300" Margin="0,60,0,0" VerticalAlignment="Top" Width="790" NavigationUIVisibility="Hidden" />
+        <Frame Name="frameMain" Content="" HorizontalAlignment="Center" Height="350" VerticalAlignment="Top" Width="790" NavigationUIVisibility="Hidden" Margin="0,55,0,0" />
     </Grid>
 </Window>
