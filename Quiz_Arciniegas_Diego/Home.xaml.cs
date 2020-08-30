@@ -18,6 +18,9 @@ namespace Quiz_Arciniegas_Diego
     /// </summary>
     public partial class Home : Page
     {
+
+        List<string> listaelementos = new List<string>();
+
         public Home()
         {
             InitializeComponent();
@@ -29,7 +32,10 @@ namespace Quiz_Arciniegas_Diego
             string RarityOfTheWeapon = lblRarityOfTheWeapon.Content.ToString();
             string Category = cbxCategory.Text;
             string Level = srLevel.Value.ToString();
-            txtResults.Text = "-WeaponName: " + WeaponName + "\n"+ "-RarityOfTheWeapon: " + RarityOfTheWeapon + "\n"+ "-Category: " + Category + "\n"+ "-Level: " + Level;
+
+
+            txtResults.Items.Add("-WeaponName: " + WeaponName + "\n" + "-RarityOfTheWeapon: " + RarityOfTheWeapon + "\n" + "-Category: " + Category + "\n" + "-Level: " + Level);
+
 
         }
 
@@ -71,7 +77,7 @@ namespace Quiz_Arciniegas_Diego
             w.frameMain.NavigationService.Navigate(new Login());
         }
 
-       
+
 
         private void srLevel_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
