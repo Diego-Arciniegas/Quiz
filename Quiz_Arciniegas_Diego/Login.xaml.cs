@@ -25,7 +25,7 @@ namespace Quiz_Arciniegas_Diego
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            if (txtUsername.Text == "carlos" && txtPassword.Password == "1234")
+            if (txtUsername.Text == "Diego" && txtPassword.Password == "210603")
             {
                MainWindow w = (MainWindow) Window.GetWindow(this);
                 w.frameMain.NavigationService.Navigate(new Home());
